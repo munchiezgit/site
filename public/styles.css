@@ -17,7 +17,7 @@
   }
   
   .navbar {
-    background-color: #ED7117;
+    background-color: #0492C2;
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@
   
   .navbar .nav-links .cta-btn {
     background-color: #fff;
-    color: #ED7117;
+    color: #0492C2;
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 5px;
@@ -63,7 +63,7 @@
   }
   
   .navbar .nav-links .cta-btn:hover {
-    background-color: #ED7117;
+    background-color: #0492C2;
     color: white;
   }
   
@@ -77,7 +77,7 @@
   }
   
   .hero {
-    background-color: #ED7117;
+    background-color: #0492C2;
     color: white;
     text-align: center;
   }
@@ -123,7 +123,7 @@
     height: 100vh;
   }
   .highlight {
-    color:#ED7117;
+    color:#60B2E5;
     font-weight: 600;
     transform: translateY(20px);
     opacity: 0;
@@ -149,6 +149,22 @@
     transform: translateY(20px);
     animation: fadeInLine 2s forwards;
   }
+  .otherbutton {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInBounce 2s forwards;
+    background-color: #0492C2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    position: relative;
+  }
+  .otherbutton:hover {
+    background-color: white;
+    color: #0492C2;
+  }
   @keyframes fadeInLine {
     0% {
       opacity: 0;
@@ -165,23 +181,25 @@
   }
   
   .line-2 {
-    animation-delay: 2s; 
+    animation-delay: 1s; 
   }
   
   .line-3 {
-    animation-delay: 4s; 
+    animation-delay: 2s; 
   }
   
   .line-4 {
-    animation-delay: 6s;
+    animation-delay: 3s;
   }
   
   .line-5 {
-    animation-delay: 8s;
+    animation-delay: 4s;
   }
-
+  .otherbutton {
+    animation-delay: 5s;
+  }
   .how-it-works-section {
-    background-color: #ED7117;
+    background-color: #0492C2;
     color:white;
     text-align: center;
     padding-bottom: 50px;
@@ -220,104 +238,13 @@
     transform: scale(1.05);
   }
   
-  .benefits-section {
-    background-color: #8D4004;
-    color: white;
-    padding: 50px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-  }
-  
-  .benefits-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .benefit-card {
-    width: 22%;
-    margin-bottom: 20px;
-    perspective: 1000px;
-  }
-
-  .benefit-inner {
-    width: 100%;
-    height: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-  }
-
-  .benefit-card:hover .benefit-inner {
-    transform: rotateY(180deg); 
-  }
-
-  .benefit-front,
-  .benefit-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-
-  .benefit-front {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #8D4004; 
-    color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .benefit-back {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #8D4004;
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    transform: rotateY(180deg); 
-  }
-    
-    .benefit {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 30px;
-      width: 48px;
-    }
-
-  .benefit-img {
-    width: 70%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-
-  .benefit h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .benefit p {
-    font-size: 55px;
-    color: #fff;
-    max-width: 280px;
-  }
   .socials-section {
     background-color: #fff;
     color: #333;
   }
   
   footer {
-    background-color: #ED7117;
+    background-color: #0492C2;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -352,7 +279,7 @@
   }
   
   ul li a:hover {
-    color: #ED7117;
+    color: #0492C2;
   }
   .waitlist-section h2 {
     text-align: center;
@@ -394,7 +321,7 @@
     width: 100%;
     padding: 12px;
     font-size: 18px;
-    background-color: #ED7117;
+    background-color: #0492C2;
     color: white;
     border: none;
     border-radius: 8px;
@@ -403,7 +330,7 @@
   }
 
   .waitlist-section button:hover {
-    background-color: #e26000;
+    background-color: #0492C2;
   }
   
   .social-media {
