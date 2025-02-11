@@ -3,38 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shipped.</title>
+  <title>ship.</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  // Wait for the typing animation to complete
+    const heroText = document.querySelector('.hero h1');
+    heroText.addEventListener('animationend', () => {
+      // Hide the hero section and fade in the rest of the page
+      document.querySelector('.hero').style.transition = 'opacity 0.5s ease';
+      document.querySelector('.hero').style.opacity = 0;
+      setTimeout(() => {
+        document.querySelector('.hero').style.display = 'none'; 
+        document.querySelector('main').style.display = 'block'; 
+        setTimeout(() => {
+          document.querySelector('main').style.opacity = 1;
+        }, 50); 
+      }, 1000); 
+    });
+  });
+
+  </script>
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="actuallogo.png" alt="Munchiez Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="waitlist.html" class="cta-btn">Join Waitlist</a></li>
-      </ul>
-    </div>
-  </nav>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       
-      <h1>shipped.</h1>
+      <h1>ship.</h1>
       <p>ship the people you love today!</p>
     </div>
   </section>
   
+  <main style="display: none; opacity: 0; transition: opacity 1s;">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="shiplogo.png" alt="Ship Logo"></a>
+        <ul class="nav-links">
+          <li><a href="waitlist.html" class="cta-btn">Join Waitlist</a></li>
+        </ul>
+      </div>
+    </nav>
+  <div class="sections-wrapper">
   <!-- About Section -->
   <section id="about" class="about-section">
     <div class="container">
-      <h2 class="line line-1">let <span class= "highlight">fate</span> find you your <span class= "highlight">perfect match!</span></h2>
+      <h3 class="line line-1">let <span class= "highlight">fate</span> find you your <span class= "highlight">perfect match!</span></h3>
       <h2 class="line line-2">meet <span class= "highlight">new</span> people.</h2>
       <h2 class="line line-3"><span class= "highlight">ship </span> couples together.</h2>
       <h2 class="line line-4">post <span class= "highlight">fun</span> content.</h2>
@@ -48,27 +66,23 @@
 
   <!-- How It Works Section -->
   <section id="how-it-works" class="how-it-works-section">
-    <div class="container">
-      <h2>How It Works</h2>
       <div class="image-gallery">
-        <ul class="gallery">
-          <li><img src= "step1.jpg" alt= "Step 1"></li>
-          <li><img src= "step2.jpg" alt= "Step 2"></li>
-          <li><img src= "step3.jpg" alt= "Step 3"></li>
-          <li><img src= "step4.jpg" alt= "Step 4"></li>
-          <li><img src= "step5.jpg" alt= "Step 5"></li>
-        </ul>
+       <div class="gallery">
+          <li><img src= "step1.png" alt= "Step 1"></li>
+          <li><img src= "step2.png" alt= "Step 2"></li>
+          <li><img src= "step3.png" alt= "Step 3"></li>
+          <li><img src= "step4.png" alt= "Step 4"></li>
+          <li><img src= "step5.png" alt= "Step 5">
       </div>
-    </div>
   </section>
-
+</div>
   <!-- Footer -->
   <footer class="footer">
     <div class="social-media">
-      <a href="https://www.instagram.com/munchiez.app/" target="_blank" class="social-icon">
+      <a href="https://www.instagram.com/shipped.info?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" class="social-icon">
         <img src="instagram.png" alt="Instagram">
       </a>
-      <a href="https://www.linkedin.com/company/munchiezapp/" target="_blank" class="social-icon">
+      <a href="https://linkedin.com/company/shippedapp" target="_blank" class="social-icon">
         <img src="linkedin.png" alt="LinkedIn">
       </a>
       <a href="contact.munchiez@gmail.com" target="_blank" class="social-icon">
@@ -76,9 +90,10 @@
       </a>
     </div>
     <div class="container">
-      <p>&copy; 2025 shipped.</p>
+      <p>&copy; 2025 ship.</p>
     </div>
   </footer>
+</main>
 
   <script src="gallery.js"></script>
 
